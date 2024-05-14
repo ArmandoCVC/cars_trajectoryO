@@ -1,0 +1,395 @@
+/*!
+Theme Name: Theme boilerplates
+Theme URI: https://github.com/melvinlemoine/WordPress-theme-boilerplate
+Author: Melvin Lemoine
+Author URI: https://melvin.studio
+Description: Let's create a new theme !
+Version: 1.3
+*/
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Thin.ttf) format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Black.ttf) format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Righteous";
+  src: url(assets/fonts/righteous/Righteous-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+.nav-header {
+  background-image: url("assets/images/img_header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.nav-header__overlay {
+  background-color: rgba(8, 8, 8, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+.nav-header__overlay_container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  height: 100%;
+}
+.nav-header__overlay_container_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.nav-header__overlay_container_logo #logo {
+  width: 27rem;
+}
+.nav-header__overlay_container_logo nav {
+  padding: 2rem 0 0 0;
+}
+.nav-header__overlay_container_logo nav .ul ul {
+  display: flex;
+}
+.nav-header__overlay_container_logo nav .ul ul .current_page_item > a {
+  color: #FFE68D !important;
+}
+.nav-header__overlay_container_logo nav .ul ul .page_item {
+  margin-left: 2rem;
+}
+.nav-header__overlay_container_logo nav .ul ul .page_item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+.nav-header__overlay_container_logo nav .ul ul .page_item a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #111;
+  padding: 3rem 0 3rem 0;
+}
+.footer__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.footer__container_titre {
+  display: flex;
+  justify-content: center;
+  font-family: "Righteous";
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.footer__container_titre .span1 {
+  color: #fff;
+}
+.footer__container_titre .span2 {
+  color: #FFE68D;
+}
+.footer__container_svg {
+  display: flex;
+  justify-content: center;
+}
+.footer__container_svg .svg {
+  fill: #fff;
+}
+.footer__container_svg .svg2 {
+  margin: 0 4rem;
+}
+.footer__container_copyright {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.home .front-section1 {
+  color: #042c52;
+}
+.home .front-section1__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.home .front-section1__container_textes {
+  margin-top: 5rem;
+}
+.home .front-section1__container_textes h1 {
+  font-family: "Righteous";
+  text-align: center;
+  font-size: 3.7rem;
+}
+.home .front-section1__container_textes p {
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.activite1 {
+  height: 15rem;
+}
+.activite1__banniere_overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
+  height: 15rem;
+  padding-top: 7rem;
+}
+.activite1__banniere_overlay h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.3rem;
+  font-family: "Righteous";
+}
+
+.contenue {
+  background-color: #fff;
+}
+.contenue__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.contenue__container_presentation {
+  margin-top: 3rem;
+}
+.contenue__container_presentation h1 {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #042c52;
+}
+.contenue__container_presentation p {
+  text-align: center;
+  font-family: "Roboto";
+  margin-top: 1rem;
+}
+.contenue__container_marques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contenue__container_marques_carte {
+  border: 1px #fff solid;
+  border-radius: 15px;
+  height: 13rem;
+  background-position: center;
+  background-size: 25rem 18rem;
+  background-repeat: no-repeat;
+}
+.contenue__container_marques_carte_overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 13rem;
+  padding: 3rem 0 0 0;
+  border-radius: 15px;
+}
+.contenue__container_marques_carte_overlay_logo {
+  display: flex;
+  justify-content: center;
+}
+.contenue__container_marques_carte_overlay_logo img {
+  height: 5rem;
+}
+.contenue__container_marques_carte_overlay_textes {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contenue__container_marques_carte_overlay_textes a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+}
+.contenue__container_marques_carte_overlay_textes a:hover {
+  color: red;
+}
+
+.contact-section1__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.models {
+  height: 15rem;
+}
+.models__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.models__container_presentation {
+  margin-top: 5rem;
+}
+.models__container_presentation h1 {
+  text-align: center;
+  font-family: "Righteous";
+  font-size: 2.5rem;
+  color: #042c52;
+}
+.models__container_presentation p {
+  text-align: center;
+  font-family: "Roboto";
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.logos {
+  background-color: #fff;
+  margin-bottom: 5rem;
+}
+.logos__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.logos__container_marques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.logos__container_marques_carte {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 0;
+}
+.logos__container_marques_carte_img {
+  display: flex;
+  justify-content: center;
+}
+.logos__container_marques_carte_img img {
+  border-radius: 20px;
+}
+.logos__container_marques_carte_txt {
+  display: flex;
+  justify-content: center;
+}
+.logos__container_marques_carte_txt a {
+  text-decoration: none;
+  color: #042c52;
+}
+.logos__container_marques_carte_txt a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.marques__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.marques__container_presentation {
+  margin-top: 5rem;
+}
+.marques__container_presentation h1 {
+  text-align: center;
+  font-family: "Righteous";
+  color: #042c52;
+  font-size: 2.5rem;
+}
+.marques__container_contenue {
+  margin-bottom: 5rem;
+}
+.marques__container_contenue_carte_img {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.marques__container_contenue_carte_txt {
+  margin-top: 2rem;
+  color: #042c52;
+  text-align: center;
+}
+
+.logos {
+  background-color: #fff;
+  margin-bottom: 5rem;
+}
+.logos__container {
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.logos__container_titre {
+  margin-bottom: 2rem;
+}
+.logos__container_titre h1 {
+  text-align: center;
+  font-family: "Righteous";
+  color: #042c52;
+  font-size: 2.5rem;
+}
+.logos__container_marques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.logos__container_marques_carte {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 0;
+}
+.logos__container_marques_carte_img {
+  display: flex;
+  justify-content: center;
+}
+.logos__container_marques_carte_img img {
+  border-radius: 20px;
+}
+.logos__container_marques_carte_txt {
+  display: flex;
+  justify-content: center;
+}
+.logos__container_marques_carte_txt a {
+  text-decoration: none;
+  color: #042c52;
+}
+.logos__container_marques_carte_txt a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

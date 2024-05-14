@@ -1,0 +1,65 @@
+.models
+    // background-color: $bleu
+    height: 15rem
+
+    &__container
+        align-items: center
+        max-width: 1200px
+        margin-inline: auto
+        padding-inline: 1rem
+
+        &_presentation
+            margin-top: 5rem
+            // margin-bottom: 3rem
+
+            h1
+                text-align: center
+                font-family: 'Righteous'
+                // font-weight: bold
+                font-size: 2.5rem
+                color: $bleu
+
+            p
+                text-align: center
+                font-family: 'Roboto'
+                margin-top: 1rem
+                font-size: 1.5rem
+
+.logos
+    background-color: $white
+    margin-bottom: 5rem
+
+    &__container
+        align-items: center
+        max-width: 1200px
+        margin-inline: auto
+        padding-inline: 1rem
+
+        &_marques
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            gap: 5rem
+
+            &_carte
+                // border: 1px red solid
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+                padding: 1rem 0
+
+   
+                &_img
+                    display: flex
+                    justify-content: center
+                    img
+                        border-radius: 20px
+
+                &_txt
+                    display: flex
+                    justify-content: center
+                    a
+                        
+                        text-decoration: none
+                        color: $bleu
+                    a:hover
+                        
+                        text-decoration: none
+                        color: red

@@ -1,0 +1,86 @@
+.activite1
+    // background-color: $bleu
+    height: 15rem
+
+    &__banniere
+        // background-color: black
+
+        &_overlay
+            background-color: rgba(0,0 ,0 , 75%)
+            background-color: black
+            height: 15rem
+            padding-top: 7rem
+
+            h1
+                text-align: center
+                color: $white
+                font-size: 2.3rem
+                font-family: 'Righteous'
+.contenue
+    background-color: $white
+
+    &__container
+        align-items: center
+        max-width: 1200px
+        margin-inline: auto
+        padding-inline: 1rem
+
+        &_presentation
+            margin-top: 3rem
+
+            h1
+                text-align: center
+                font-family: 'Roboto'
+                font-weight: bold
+                font-size: 2rem
+                color: $bleu
+
+            p
+                text-align: center
+                font-family: 'Roboto'
+                margin-top: 1rem
+
+        &_marques
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            gap:2rem
+            margin-top: 3rem
+            margin-bottom: 3rem
+
+            &_carte
+                border: 1px $white solid
+                border-radius: 15px
+                height: 13rem
+
+                background-position: center
+                background-size: 25rem 18rem
+                background-repeat: no-repeat
+
+                &_overlay
+                    background-color: rgba(0, 0, 0, 75%)
+                    height: 13rem
+                    padding: 3rem 0 0 0
+                    border-radius: 15px
+
+
+                    &_logo
+                        display: flex
+                        justify-content: center
+                        img
+                            height: 5rem
+                   
+
+                    &_textes
+                        display: flex
+                        justify-content: center
+                        margin-top: 2rem
+                        a
+                            text-decoration: none
+                            color: $white
+                            font-family: 'Roboto'
+                            font-size: 1.4rem
+                        a:hover
+                            
+                            color: red
+                
+                            
